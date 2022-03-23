@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AniPlus</string>
+    <string name="inicio_entrar">Entrar</string>
+    <string name="inicio_cadastrar">Cadastrar</string>
+    <string name="inicio_conectado">Mantenha-me conectado</string>
+    <string name="inicio_esqueceu_senha">Esqueceu a senha?</string>
+    <string name="mail">E-mail</string>
+    <string name="pass">Senha</string>
+</resources>

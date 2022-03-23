@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size">20dp</dimen>
+    <dimen name="text_padding">6dp</dimen>
+    <dimen name="height_itens">56dp</dimen>
+    <dimen name="radius_shape">40dp</dimen>
+    <dimen name="margin_login_fields">40dp</dimen>
+</resources>
