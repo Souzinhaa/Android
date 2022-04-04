@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Delivery Assistant</string>
+    <string name="entrar">Entrar</string>
+    <string name="login">Login</string>
+    <string name="senha">Senha</string>
+    <string name="salvar">Salvar</string>
+    <string name="coleta">Coleta</string>
+    <string name="coletar">Coletar</string>
+    <string name="entrega">Entrega</string>
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="layoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/anaheim</item>
+        <item name="android:padding">@dimen/paddingDefault</item>
+    </style>
+    <style name="textBodyStyle" parent="layoutStyle">
+        <item name="android:textSize">@dimen/heightDefault</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+    <style name="textBodyStyleCons" parent="layoutStyle">
+        <item name="android:textSize">@dimen/heightDefault</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+    <style name="textTittleStyle" parent="layoutStyle">
+        <item name="android:textSize">@dimen/heightTDefault</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="buttonStyle" parent="layoutStyle">
+        <item name="android:textSize">@dimen/heightButtonDefault</item>
+        <item name="android:background">@drawable/btn_background</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+</resources>

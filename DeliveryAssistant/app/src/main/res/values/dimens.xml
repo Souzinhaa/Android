@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="MarginDefault">32dp</dimen>
+    <dimen name="heightTDefault">38dp</dimen>
+    <dimen name="heightDefault">22dp</dimen>
+    <dimen name="heightButtonDefault">20dp</dimen>
+    <dimen name="paddingDefault">10dp</dimen>
+    <dimen name="paddingAlertDefault">20dp</dimen>
+    <dimen name="larguraBotao">50dp</dimen>
+</resources>
