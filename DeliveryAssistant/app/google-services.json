@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "688140347947",
+    "project_id": "delivery-assistant-perim",
+    "storage_bucket": "delivery-assistant-perim.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:688140347947:android:5a41ee4ef099200018986e",
+        "android_client_info": {
+          "package_name": "br.com.sousys.devassist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "688140347947-dpr4dfklh49c8dbokjga87rqu1kcrgfi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHwGZsgIvwwufDBrTu_GIvwpPf8XDZzK0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "688140347947-dpr4dfklh49c8dbokjga87rqu1kcrgfi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

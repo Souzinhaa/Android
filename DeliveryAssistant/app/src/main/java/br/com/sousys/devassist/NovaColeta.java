@@ -7,25 +7,24 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class DetalhamentoColeta extends AppCompatActivity {
+public class NovaColeta extends AppCompatActivity {
 
     AppCompatButton btn_deletar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_detalhamento_coleta);
+        setContentView(R.layout.activity_nova_coleta);
 
         iniciarComponentes();
 
         btn_deletar.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                Intent intent = new Intent(DetalhamentoColeta.this, MainMotorista.class);
+                Intent intent = new Intent(NovaColeta.this, MainExpedidor.class);
                 startActivity(intent);
             }
         });
-
     }
 
     public void iniciarComponentes(){

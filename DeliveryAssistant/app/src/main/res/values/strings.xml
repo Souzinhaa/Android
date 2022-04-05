@@ -5,6 +5,25 @@
     <string name="senha">Senha</string>
     <string name="salvar">Salvar</string>
     <string name="coleta">Coleta</string>
+    <string name="novoP">Novo Pedido</string>
     <string name="coletar">Coletar</string>
     <string name="entrega">Entrega</string>
+    <string name="deletar">Deletar</string>
+    <string name="cadastrarP">Cadastrar Pedido</string>
+    <string name="pedidosA">Pedidos Abertos</string>
+    <string name="novoC">Novo Carro</string>
+    <string name="nNota">Número Nota</string>
+    <string name="moto">Motorista</string>
+    <string name="obs">Observação</string>
+    <string name="car">Carro</string>
+    <string name="hora">Hora</string>
+    <string name="modelo">Modelo</string>
+    <string name="marca">Marca</string>
+    <string name="ano">Ano</string>
+    <string name="novoCo">Novo Colaborador</string>
+    <string name="nome">Nome</string>
+    <string name="email">Email</string>
+    <string name="re">Registro Empregado</string>
+    <string name="expedidor">Expedidor</string>
+
 </resources>

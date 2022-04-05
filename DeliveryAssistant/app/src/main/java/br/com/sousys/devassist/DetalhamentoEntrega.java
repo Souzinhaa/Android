@@ -2,6 +2,7 @@ package br.com.sousys.devassist;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 import androidx.core.app.ActivityCompat;
 
 import android.Manifest;
@@ -18,6 +19,7 @@ public class DetalhamentoEntrega extends AppCompatActivity {
 
     ImageButton img_cam;
     ImageView img_foto;
+    AppCompatButton btn_deletar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,11 +38,20 @@ public class DetalhamentoEntrega extends AppCompatActivity {
                 tirarFoto();
             }
         });
+
+        btn_deletar.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(DetalhamentoEntrega.this, MainMotorista.class);
+                startActivity(intent);
+            }
+        });
     }
 
     public void iniciarComponentes(){
         img_cam = findViewById(R.id.img_cam);
         img_foto = findViewById(R.id.img_foto);
+        btn_deletar = findViewById(R.id.btn_deletar);
     }
 
     public void tirarFoto(){

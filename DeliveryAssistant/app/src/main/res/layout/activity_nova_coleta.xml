@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NovaColeta">
+
+        <TextView
+            android:id="@+id/txt_pedido"
+            android:text="@string/novoP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/MarginDefault"
+            android:layout_marginRight="@dimen/MarginDefault"
+            style="@style/textTittleStyle"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <EditText
+            android:id="@+id/edit_n_nota"
+            style="@style/textBodyStyle"
+            android:hint="@string/nNota"
+            android:inputType="number"
+            android:background="@drawable/form_background"
+            android:layout_width="190dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/MarginDefault"
+            app:layout_constraintTop_toBottomOf="@id/txt_pedido"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/edit_hora"/>
+
+        <EditText
+            android:id="@+id/edit_hora"
+            style="@style/textBodyStyle"
+            android:hint="@string/hora"
+            android:inputType="time"
+            android:background="@drawable/form_background"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/MarginDefault"
+            app:layout_constraintTop_toBottomOf="@id/txt_pedido"
+            app:layout_constraintStart_toEndOf="@id/edit_n_nota"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <EditText
+            android:id="@+id/edit_motorista"
+            style="@style/textBodyStyle"
+            android:hint="@string/moto"
+            android:inputType="text"
+            android:background="@drawable/form_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/MarginDefault"
+            android:layout_marginRight="@dimen/MarginDefault"
+            app:layout_constraintTop_toBottomOf="@id/edit_n_nota"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <EditText
+            android:id="@+id/edit_carro"
+            style="@style/textBodyStyle"
+            android:hint="@string/car"
+            android:inputType="text"
+            android:background="@drawable/form_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/MarginDefault"
+            android:layout_marginRight="@dimen/MarginDefault"
+            app:layout_constraintTop_toBottomOf="@id/edit_motorista"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <EditText
+            android:id="@+id/edit_observacoes"
+            style="@style/textBodyStyle"
+            android:hint="@string/obs"
+            android:inputType="text"
+            android:background="@drawable/form_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/MarginDefault"
+            android:layout_marginRight="@dimen/MarginDefault"
+            app:layout_constraintTop_toBottomOf="@id/edit_carro"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/view_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:layout_marginLeft="@dimen/MarginDefault"
+            android:layout_marginRight="@dimen/MarginDefault"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_deletar"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_red"
+                android:layout_marginLeft="10dp"
+                style="@style/buttonCleanStyle"
+                android:text="@string/deletar"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_salvar"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_green"
+                android:layout_marginRight="10dp"
+                style="@style/buttonCleanStyle"
+                android:text="@string/salvar"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

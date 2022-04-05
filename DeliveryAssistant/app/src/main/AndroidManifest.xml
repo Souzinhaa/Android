@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="br.com.sousys.devassist">
 
-    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:allowBackup="true"
@@ -11,6 +11,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DeliveryAssistant">
+        <activity
+            android:name=".NovoUsuario"
+            android:exported="false" />
+        <activity
+            android:name=".NovoCarro"
+            android:exported="false" />
+        <activity
+            android:name=".NovaColeta"
+            android:exported="false" />
         <activity
             android:name=".DetalhamentoEntrega"
             android:exported="false" />
@@ -25,9 +34,6 @@
             android:exported="false" />
         <activity
             android:name=".MainExpedidor"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".LoginForm"

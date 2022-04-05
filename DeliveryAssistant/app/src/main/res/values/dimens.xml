@@ -2,9 +2,11 @@
 <resources>
     <dimen name="MarginDefault">32dp</dimen>
     <dimen name="heightTDefault">38dp</dimen>
-    <dimen name="heightDefault">22dp</dimen>
+    <dimen name="heightDefault">52dp</dimen>
     <dimen name="heightButtonDefault">20dp</dimen>
     <dimen name="paddingDefault">10dp</dimen>
-    <dimen name="paddingAlertDefault">20dp</dimen>
+    <dimen name="paddingAlertDefault">10dp</dimen>
     <dimen name="larguraBotao">50dp</dimen>
+    <dimen name="fontSize">18dp</dimen>
+    <dimen name="tittleFontSize">30dp</dimen>
 </resources>

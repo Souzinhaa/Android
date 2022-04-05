@@ -5,11 +5,11 @@
     android:background="@drawable/background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DetalhamentoColeta">
+    tools:context=".NovoUsuario">
 
     <TextView
-        android:id="@+id/txt_coleta"
-        android:text="@string/coleta"
+        android:id="@+id/txt_pedido"
+        android:text="@string/novoCo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/MarginDefault"
@@ -17,66 +17,75 @@
         style="@style/textTittleStyle"
         app:layout_constraintTop_toTopOf="parent"/>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/view_info"
-        android:background="@drawable/background_2"
+    <EditText
+        android:id="@+id/edit_nome"
+        style="@style/textBodyStyle"
+        android:hint="@string/nome"
+        android:inputType="text"
+        android:background="@drawable/form_background"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/MarginDefault"
         android:layout_marginRight="@dimen/MarginDefault"
-        app:layout_constraintTop_toBottomOf="@id/txt_coleta">
+        app:layout_constraintTop_toBottomOf="@id/txt_pedido"
+        app:layout_constraintStart_toStartOf="parent"/>
 
-        <TextView
-            android:id="@+id/txt_nf"
-            android:text="NF: 300000"
+    <EditText
+        android:id="@+id/edit_email"
+        style="@style/textBodyStyle"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/form_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/MarginDefault"
+        android:layout_marginRight="@dimen/MarginDefault"
+        app:layout_constraintTop_toBottomOf="@id/edit_nome"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/edit_re"
+        style="@style/textBodyStyle"
+        android:hint="@string/re"
+        android:inputType="text"
+        android:background="@drawable/form_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/MarginDefault"
+        android:layout_marginRight="@dimen/MarginDefault"
+        app:layout_constraintTop_toBottomOf="@id/edit_email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/form_background"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="@dimen/MarginDefault"
+        android:layout_marginRight="@dimen/MarginDefault"
+        app:layout_constraintTop_toBottomOf="@id/edit_re"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <RadioButton
+            android:id="@+id/radio_expedidor"
             style="@style/textBodyStyle"
+            android:text="@string/expedidor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintEnd_toStartOf="@id/txt_hora"
-            app:layout_constraintStart_toStartOf="parent"/>
-
-        <TextView
-            android:id="@+id/txt_hora"
-            android:text="Hora: 15:00"
+            android:layout_margin="20dp"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton
+            android:id="@+id/radio_motorista"
             style="@style/textBodyStyle"
+            android:text="@string/moto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toEndOf="@id/txt_nf"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            android:layout_margin="20dp"
+            android:onClick="onRadioButtonClicked"/>
 
-        <TextView
-            android:id="@+id/txt_carro"
-            android:text="Carro: Iveco Daily"
-            style="@style/textBodyStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/txt_nf"/>
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="180dp"
-            android:layout_marginTop="5dp"
-            app:layout_constraintTop_toBottomOf="@id/txt_carro">
-
-            <TextView
-                android:id="@+id/txt_observacao"
-                android:layout_width="wrap_content"
-                style="@style/textBodyStyle"
-                android:padding="0dp"
-                android:text="Observações:"
-                android:layout_height="wrap_content"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"/>
-
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </RadioGroup>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/view_button"
@@ -107,7 +116,7 @@
             android:background="@drawable/btn_green"
             android:layout_marginRight="10dp"
             style="@style/buttonCleanStyle"
-            android:text="@string/coletar"
+            android:text="@string/salvar"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"/>
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".DetalhamentoEntrega">
@@ -14,11 +15,12 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/MarginDefault"
         android:layout_marginRight="@dimen/MarginDefault"
-        style="@style/textBodyStyleCons"
+        style="@style/textTittleStyle"
         app:layout_constraintTop_toTopOf="parent"/>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/view_info"
+        android:background="@drawable/background_2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/MarginDefault"
@@ -48,8 +50,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="180dp"
-            app:layout_constraintTop_toBottomOf="@id/txt_nf"
-            android:background="@drawable/entrega_background">
+            app:layout_constraintTop_toBottomOf="@id/txt_nf">
 
             <TextView
                 android:id="@+id/txt_observacao"
@@ -84,7 +85,7 @@
             style="@style/buttonStyle"
             android:src="@drawable/ic_camera"
             android:layout_height="@dimen/larguraBotao"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toTopOf="@id/edit_recebedor"
             app:layout_constraintStart_toStartOf="@id/btn_salvar"/>
 
         <EditText
@@ -92,6 +93,8 @@
             android:layout_width="260dp"
             android:hint="Nome do recebedor..."
             android:layout_height="@dimen/larguraBotao"
+            style="@style/textBodyStyle"
+            android:background="@drawable/form_background"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toEndOf="@id/img_cam"
             app:layout_constraintEnd_toEndOf="parent"/>
@@ -100,41 +103,45 @@
 
     <ImageView
         android:id="@+id/img_foto"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/view_info_2"
-        app:layout_constraintStart_toStartOf="parent"/>
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_marginLeft="@dimen/MarginDefault"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_info_2" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/view_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/MarginDefault"
+        android:layout_marginBottom="40dp"
         android:layout_marginLeft="@dimen/MarginDefault"
         android:layout_marginRight="@dimen/MarginDefault"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
-        <ImageView
-            android:id="@+id/img_excluir"
-            android:layout_width="wrap_content"
-            android:backgroundTint="@color/red"
-            style="@style/buttonStyle"
-            android:src="@drawable/ic_delete"
-            android:layout_height="@dimen/larguraBotao"
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_deletar"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_red"
+            android:layout_marginLeft="10dp"
+            style="@style/buttonCleanStyle"
+            android:text="@string/deletar"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="@id/btn_salvar"
-            app:layout_constraintEnd_toStartOf="parent"/>
+            app:layout_constraintStart_toStartOf="parent"/>
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_salvar"
-            android:layout_width="100dp"
-            android:backgroundTint="@color/green"
-            style="@style/buttonStyle"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_green"
+            android:layout_marginRight="10dp"
+            style="@style/buttonCleanStyle"
             android:text="@string/salvar"
-            android:layout_height="@dimen/larguraBotao"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toEndOf="@id/img_excluir"
             app:layout_constraintEnd_toEndOf="parent"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 

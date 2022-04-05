@@ -3,17 +3,28 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Bruno/AndroidStudioProjects/DeliveryAssistant/app/src/main/res/drawable/background.xml" value="0.1285" />
+        <entry key="..\:/Users/Bruno/AndroidStudioProjects/DeliveryAssistant/app/src/main/res/drawable/background_2.xml" value="0.1285" />
         <entry key="..\:/Users/Bruno/AndroidStudioProjects/DeliveryAssistant/app/src/main/res/drawable/btn_background.xml" value="0.1475" />
+        <entry key="..\:/Users/Bruno/AndroidStudioProjects/DeliveryAssistant/app/src/main/res/drawable/btn_green.xml" value="0.1285" />
+        <entry key="..\:/Users/Bruno/AndroidStudioProjects/DeliveryAssistant/app/src/main/res/drawable/btn_red.xml" value="0.1285" />
         <entry key="..\:/Users/Bruno/AndroidStudioProjects/DeliveryAssistant/app/src/main/res/drawable/coleta_background.xml" value="0.1475" />
+        <entry key="..\:/Users/Bruno/AndroidStudioProjects/DeliveryAssistant/app/src/main/res/drawable/container_button.xml" value="0.1" />
+        <entry key="..\:/Users/Bruno/AndroidStudioProjects/DeliveryAssistant/app/src/main/res/drawable/divisor.xml" value="0.1285" />
         <entry key="..\:/Users/Bruno/AndroidStudioProjects/DeliveryAssistant/app/src/main/res/drawable/edit_background.xml" value="0.1475" />
         <entry key="..\:/Users/Bruno/AndroidStudioProjects/DeliveryAssistant/app/src/main/res/drawable/entrega_background.xml" value="0.1475" />
+        <entry key="..\:/Users/Bruno/AndroidStudioProjects/DeliveryAssistant/app/src/main/res/drawable/form_background.xml" value="0.1285" />
         <entry key="..\:/Users/Bruno/AndroidStudioProjects/DeliveryAssistant/app/src/main/res/drawable/ic_delete.xml" value="0.1475" />
         <entry key="..\:/Users/Bruno/AndroidStudioProjects/DeliveryAssistant/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1475" />
         <entry key="..\:/Users/Bruno/AndroidStudioProjects/DeliveryAssistant/app/src/main/res/font/anaheim.xml" value="0.23958333333333334" />
         <entry key="..\:/Users/Bruno/AndroidStudioProjects/DeliveryAssistant/app/src/main/res/layout/activity_detalhamento_coleta.xml" value="0.25" />
         <entry key="..\:/Users/Bruno/AndroidStudioProjects/DeliveryAssistant/app/src/main/res/layout/activity_detalhamento_entrega.xml" value="0.1947463768115942" />
         <entry key="..\:/Users/Bruno/AndroidStudioProjects/DeliveryAssistant/app/src/main/res/layout/activity_login_form.xml" value="0.25" />
+        <entry key="..\:/Users/Bruno/AndroidStudioProjects/DeliveryAssistant/app/src/main/res/layout/activity_main_expedidor.xml" value="0.22" />
         <entry key="..\:/Users/Bruno/AndroidStudioProjects/DeliveryAssistant/app/src/main/res/layout/activity_main_motorista.xml" value="0.22" />
+        <entry key="..\:/Users/Bruno/AndroidStudioProjects/DeliveryAssistant/app/src/main/res/layout/activity_nova_coleta.xml" value="0.25" />
+        <entry key="..\:/Users/Bruno/AndroidStudioProjects/DeliveryAssistant/app/src/main/res/layout/activity_novo_carro.xml" value="0.1" />
+        <entry key="..\:/Users/Bruno/AndroidStudioProjects/DeliveryAssistant/app/src/main/res/layout/activity_novo_usuario.xml" value="0.25" />
       </map>
     </option>
   </component>
